@@ -1,14 +1,17 @@
 const express = require('express');
 const logger = require('morgan');
+var cors = require('cors');
+
 
 const indexRouter = require('./routes/index');
 
-const app = express();
+const api = express();
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+api.use(cors());
+api.use(logger('dev'));
+api.use(express.json());
+api.use(express.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
+api.use('/', indexRouter);
 
-module.exports = app;
+module.exports = api;

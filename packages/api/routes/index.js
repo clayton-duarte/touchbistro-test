@@ -10,7 +10,6 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
   const { num } = req.body;
-  console.log(req);
   const primeNumber = sortPrime(num);
   const middle = arrMidleItens(primeNumber);
   res.send({ data: middle });
