@@ -1,9 +1,9 @@
-import Home from '../pages';
+import Title from '../components/Title';
 
-describe('Home', () => {
+describe('Title', () => {
   it('should render correctly', () => {
     const wrapper = render(
-      <Home />
+      <Title />
     );
     expect(wrapper).toMatchSnapshot();
   });

@@ -1,9 +1,9 @@
-import Home from '../pages';
+import Label from '../components/Label';
 
-describe('Home', () => {
+describe('Label', () => {
   it('should render correctly', () => {
     const wrapper = render(
-      <Home />
+      <Label />
     );
     expect(wrapper).toMatchSnapshot();
   });

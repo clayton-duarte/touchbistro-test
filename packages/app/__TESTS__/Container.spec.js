@@ -1,9 +1,9 @@
-import Home from '../pages';
+import Container from '../components/Container';
 
-describe('Home', () => {
+describe('Container', () => {
   it('should render correctly', () => {
     const wrapper = render(
-      <Home />
+      <Container />
     );
     expect(wrapper).toMatchSnapshot();
   });

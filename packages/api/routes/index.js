@@ -12,7 +12,7 @@ router.post('/', function (req, res) {
   const { num } = req.body;
   const primeNumber = sortPrime(num);
   const middle = arrMidleItens(primeNumber);
-  res.send({ data: middle });
+  res.send(middle);
 });
 
 module.exports = router;
